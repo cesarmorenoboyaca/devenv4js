@@ -9,11 +9,11 @@ describe ('Our first test', () => {
 });
 
 describe('index.html', () => {
-  it('Deberia decir Hola mundo desde Colombia', (done) => {
+  it('Deberia tener el encabezado de la tabla de usuarios', (done) => {
     const index = fs.readFileSync('./src/index.html', "utf-8");
     jsdom.env(index, function(err, window) {
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal("Hola mundo desde Colombia");
+      expect(h1.innerHTML).to.equal("Listado de usuarios");
       done();
       window.close();
     });

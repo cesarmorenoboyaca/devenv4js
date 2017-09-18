@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 90533143,
+      "firstName": "Magnus",
+      "lastName": "Hoeger",
+      "email": "Eleanore.Pacocha52@yahoo.com"
+    },
+    {
+      "id": 46836459,
+      "firstName": "Wendy",
+      "lastName": "Zulauf",
+      "email": "Bettie_Ratke74@hotmail.com"
+    },
+    {
+      "id": 89757660,
+      "firstName": "Marguerite",
+      "lastName": "Haag",
+      "email": "Helga_Huels95@gmail.com"
+    },
+    {
+      "id": 73687733,
+      "firstName": "Eladio",
+      "lastName": "Satterfield",
+      "email": "Julius.Jerde@hotmail.com"
+    }
+  ]
+}
