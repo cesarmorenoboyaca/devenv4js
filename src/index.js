@@ -1,5 +1,6 @@
-import {getUsers, deleteUser} from './API/userApi'
+import './index.css';
 
+import {getUsers, deleteUser} from './API/userApi';
 
 // Populate table of users via API call.
 getUsers().then(result => {
@@ -19,6 +20,8 @@ getUsers().then(result => {
 
   const deleteLinks = global.document.getElementsByClassName('deleteUser');
 
+  // Must use array.from to create a real array from a DOM collection
+  // getElementsByClassname only returns an "array like" object
   Array.from(deleteLinks, link => {
     link.onclick = function(event) {
       const element = event.target;
@@ -28,5 +31,4 @@ getUsers().then(result => {
       row.parentNode.removeChild(row);
     };
   });
-
 });
